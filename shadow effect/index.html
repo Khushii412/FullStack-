@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow effect</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="/moon.jpg" alt="moon" width="200px">
+            <h2>welcome to FS classes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, eligendi libero? Illo ipsum sequi alias asperiores dolorum vel deserunt maiores accusantium doloribus! Iusto, asperiores vero.</p>
+        </div>
+    </div>
+
+    <style>
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+             justify-content: center;
+             align-items: center;
+        }
+        .box{
+            background-color: aquamarine;
+            width: 330px;
+            height: 350px;
+            border: 2px solid rgb(220, 81, 220);
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+             /*----------- 5px (x axix) 10px(y axis)---------- */
+
+            /* box-shadow: 5px 10px red; */ 
+            /* box-shadow: -10px 10px green; */
+
+            /* --------x offset , y offset , blur radius, color */
+            /* box-shadow: 10px 20px 30px red; */
+
+
+            /* x offset, y offset, blur radius, spred radius, color */
+            box-shadow: 10px 15px 10px 30px rgb(239, 84, 110);
+
+
+            /* --- inside shadow --------*/
+           box-shadow: inset 4px 10px 15px red;
+
+           /* -------multiple shadow------------ */
+           box-shadow: 10px 12px red, 15px 20px rgb(117, 27, 27);
+        }
+    </style>
+</body>
+</html>
