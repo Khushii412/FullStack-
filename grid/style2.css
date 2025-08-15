@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    border: 6px solid rgb(216, 11, 11);
+    gap: 1rem;
+    background: #a29f9f;
+    padding: 4rem;
+   grid-template-rows: repeat(3, 1fr);
+   grid-template-columns: repeat(4, 1fr);
+   justify-items: self-end;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background: #000;
+    border: 3px solid rgb(242, 237, 237);
+    /* justify-self: stretch; */
+   /* align-self: self-end; */
+   /* place-self: stretch; */
+}
