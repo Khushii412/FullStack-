@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query 2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="boxleft">
+            <p>text 1</p>
+            <p>text 2</p>
+        </div>
+
+        <div class="boxRight">
+            <img src="/moon.jpg" alt="">
+        </div>
+    </div>
+
+    <style>
+        .container{
+            background-color: aqua;
+            border: 2px solid black;
+            display: flex;
+            height: 900px;
+            width: 800px;
+            padding: 3px;
+        }
+        .boxleft{
+            background-color: rebeccapurple;
+            height: 50%;
+            width: 40%;
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        p{
+            border: 2px solid whitesmoke;
+        }
+        .boxRight{
+            background-color: bisque;
+            height: 50%;
+            width: 60%;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        @media (max-width:640px)
+        {
+            .container{
+            background-color: rgb(38, 0, 255);
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            height: 900px;
+            width: 800px;
+            padding: 3px;
+        }
+        }
+    </style>
+</body>
+</html>
