@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D transform</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="Rotatex">Rotatex</div>
+        <div class="item" id="RotateY">RotateY</div>
+        <div class="item" id="RotateZ">RotateZ</div>
+        <div class="item" id="TranslateX">TranslateX</div>
+        <div class="item" id="TranslateY">TranslateY</div>
+        <div class="item" id="TranslateZ">Translatez</div>
+        <div class="item" id="ScaleX">ScaleX</div>
+        <div class="item" id="Scaley">ScaleY</div>
+        <div class="item" id="Scalez">Scalez</div>
+
+    </div>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            background-color: bisque;
+           
+        }
+        .container{
+            display: grid;
+            gap: 1rem;
+            padding: 5rem;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+          
+        }
+        .item{
+            height: 250px;
+            width: 250px;
+            background-color: cadetblue;
+            border: 3px solid black;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-size: 2rem;
+           color: rgb(255, 255, 255);
+        }
+        #Rotatex:hover{
+            color: aquamarine;
+            transform: RotateX(45deg);
+            transition: transform .2s linear ;
+        }
+        #RotateY:hover{
+            color: aquamarine;
+            transform: rotateY(50deg);
+             transition: transform .1s linear .1s;
+        }
+         #RotateZ:hover{
+            color: aquamarine;
+            transform: rotateZ(-50deg);
+             transition: transform .1s linear .1s;
+            
+        }
+        #TranslateX:hover{
+         color: aquamarine;
+            transform: TranslateX(-50px);
+             transition: transform .2s linear .1s;
+               
+        }
+          #TranslateY:hover{
+         color: aquamarine;
+            transform: TranslateY(-50px);
+             transition: transform .1s linear .1s;
+               
+        }
+        #TranslateZ:hover{
+         color: aquamarine;
+            transform:perspective(260px) TranslateZ(50px);
+             transition: transform .1s linear .1s;
+               
+        }
+        #ScaleX:hover{
+            color: aquamarine;
+            transform:ScaleX(1.5);
+            transition: transform .1s linear .1s;
+        }
+         #Scaley:hover{
+            color: aquamarine;
+            transform:ScaleY(1.3);
+            transition: transform .1s linear .1s;
+        }
+        #Scalez:hover{
+            color: aquamarine;
+            transform:perspective(200px) rotateY(-40deg) scaleZ(9);
+            transition: transform .1s linear .1s;
+        }
+    </style>
+</body>
+</html>
