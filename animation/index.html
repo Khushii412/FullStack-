@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation
+    </title>
+</head>
+<body>
+    <div class="container">
+        <div class="box"> </div>
+        <div class="box2" id="box2"></div>
+        <div class="circle"></div>
+    </div>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: beige;
+            border: 5px solid black;
+        }
+        .box{
+            height: 80px;
+            width: 350px;
+            background-color: blue;
+            border-radius: 10px;
+            margin: 10px;
+            border: 2px solid red;
+            position: relative;
+            /* animation-name: rightMovement;
+            animation-duration: 2s;
+            animation-iteration-count: 2;
+            animation-delay: 2s; */
+            /* animation-timing-function: linear; */
+            /* animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-out; */
+            /* animation-direction: alternate; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-direction: normal; */
+            /* animation-direction: reverse; */
+            /* animation-direction: inherit; */
+            /* animation-timing-function: cubic-bezier(0.07, .2, 0.007, 0.02);
+            animation-fill-mode: both; */
+            /* animation-fill-mode: forwards; */
+            /* animation-fill-mode: backwards;
+            animation-fill-mode: none; */
+
+            /*------------------- short hand notation------------- */
+
+            /* @keyframes - duration | timing-function | delay | iteration count
+               | direction | fill-mode | play-state | name */
+
+               animation: 5s linear 1s infinite alternate-reverse none running rightMovement;
+        }
+        @keyframes rightMovement{
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 1000px;
+                left: 600px;
+            }
+        }
+
+            .box2{
+            height: 80px;
+            width: 350px;
+            background-color: red;
+            border-radius: 10px;
+            margin: 10px;
+            border: 2px solid blue;
+            position: relative;
+             animation: 5s linear 1s infinite alternate-reverse none running leftMovement;
+            }
+
+              @keyframes leftMovement{
+            from{
+                top: 1000px;
+                left: 0;
+            }
+            to{
+                top: 000px;
+                left: 600px;
+            }
+        }
+
+        .circle{
+            width: 150px;
+            height: 150px;
+            background-color: violet;
+            border-radius: 50%;
+            position: relative;
+            top: 350px;
+            left: 400px;
+            border: 2px solid black;
+             animation: 5s linear 1s infinite alternate-reverse none running circleMovement;
+            
+
+        }
+        @keyframes circleMovement{
+            0%{
+                top: 0;
+                left: 0;
+            }   
+            30%{
+                top: 850px;
+                left: 750px;
+            } 
+           60%{
+                top: 850px;
+                left: 0;
+                }
+
+            100%{
+                top: 0;
+                left: 700px;
+            }
+        }
+    </style>
+</body>
+</html>
