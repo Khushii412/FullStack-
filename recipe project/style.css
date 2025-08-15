@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(127, 255, 212, 0.314);
+    overflow-x: none;
+}
+
+.navcontainer{
+    background-color: rgba(15, 23, 26, 0.238);
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+nav{
+    width: 100%;
+    padding-left: 2rem;
+} 
+#navlist{
+    list-style: none;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+    align-items: center;
+}
+#logoName{
+    font-size: 3rem;
+    color: rgba(3, 52, 36, 0.92);
+   
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(67, 67, 67);
+}
+#navitems{
+    display: flex;
+    gap: 50px;
+    margin-right: 40px;
+}
+.contentBox{
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgba(49, 200, 183, 0.163);
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    overflow: hidden;
+    box-shadow: 3px 3px 30px rgba(65, 71, 70, 0.803);
+}
+
+.contentBox section{
+    margin-top: 50px;
+    
+}
+
+/* h1 {
+  font-size: 32px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.leftBox{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+
+.leftBox h2{
+    font-size: 4rem;
+    color: rgba(65, 151, 122, 0.955);
+}
+.leftBox h3{
+    font-size: 2.5rem;
+    color: rgba(16, 182, 116, 0.769);
+}
+.ingbox{
+    font-size: 2rem;
+    color: rgba(6, 41, 22, 0.653);
+    list-style: none;
+    font-weight: 550;
+}
+.recipeBox{
+    font-size: 2rem;
+     color: rgba(6, 41, 22, 0.821);
+     list-style: none;
+    
+}
+.rightBox{
+    width: 30%;
+    position: relative;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.74);
+    transition: all .4s .2s linear;
+    border-radius: 50%;
+}
+.rightBox img{
+    border-radius: 100%;
+    margin-top: 30% 30%;
+    border: 2px solid rgba(18, 226, 31, 0.857);
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+.rightBox .overlay{
+
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.484);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;flex-direction: column;
+    opacity: 0;
+    
+}
+
+
+
+.rightBox .overlay p{
+    color: white;
+    font-size: 2rem;
+    transition: font-size .2s 1s linear;
+    font-family: 'Times New Roman', Times, serif;
+}
+.rightBox:hover{
+    scale: 1.2;
+    transform: translate(10px, 10px);
+}
+.rightBox .overlay:hover{
+    opacity: 1;
+}
+
+
+
+
+.footerBox{
+    /* background-color: rgba(58, 103, 88, 0.264); */
+    width: 100vw;
+    min-height: 60px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+background: #22b3c9;
+background: linear-gradient(7deg, rgba(34, 179, 201, 1) 0%, rgba(128, 217, 193, 1) 100%, rgba(161, 203, 209, 1) 23%);
+}
+.footerText{
+    padding-top: 10px;
+    color: rgba(29, 29, 29, 0.946);
+    font-size: 2rem;
+}
+.footerBox span{
+    color: red;
+    font-size: 2.1rem;
+}
